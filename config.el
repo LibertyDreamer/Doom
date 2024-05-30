@@ -34,6 +34,9 @@
 (global-visual-line-mode 1)
 (add-hook 'treemacs-mode-hook (lambda () (visual-line-mode -1)))
 (setq visual-line-fringe-indicators '(left-curly-arrow))
+(after! treemacs
+  (setq treemacs-show-hidden-files t))
+
 
 (nyan-mode)
 (setq nyan-animate-nyancat t)
