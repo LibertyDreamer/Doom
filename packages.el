@@ -56,3 +56,6 @@
 (package! minimap)
 (package! org-drill)
 (package! telega)
+
+(package! define-word)
+(package! wiki-summary)

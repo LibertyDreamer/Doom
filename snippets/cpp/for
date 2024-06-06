@@ -1,0 +1,8 @@
+# -*- mode: cpp -*-
+# name: for_cpp
+# key: JKL
+# --
+
+for(int $0 = $1; $0 < $2; ++$0){
+
+}

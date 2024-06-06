@@ -65,6 +65,8 @@
 
 (my-add-menu-item 't 'fill-region "Fill region")
 
+(my-add-menu-item 't 'wiki-summary "Define word")
+(my-add-menu-item 't 'define-word-at-point "Wiki summary")
 
 (defun request-to-ai (open-ai-key request &optional information-for-ai-what-to-do-with-request)
   "Send request to AI and show respounce in pop-up window"
