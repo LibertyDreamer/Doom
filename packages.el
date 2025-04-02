@@ -48,14 +48,14 @@
 ;; (unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;; (unpin! t)
-(unpin! org-roam)
-(package! org-roam-ui)
+(package! org-modern)
+(package! org-download)
+(package! openwith)
 
 (package! undo-tree)
 (package! nyan-mode)
 (package! minimap)
 (package! org-drill)
-(package! telega)
 
 (package! define-word)
 (package! wiki-summary)

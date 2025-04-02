@@ -8,26 +8,6 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
-
-(use-package! websocket
-    :after org-roam)
-
-
-
-
-(use-package! org-roam-ui
-    :after org-roam ;; or :after org
-;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
-;;         a hookable mode anymore, you're advised to pick something yourself
-;;         if you don't care about startup time, use
-;;  :hook (after-init . org-roam-ui-mode)
-    :config
-    (setq org-roam-ui-sync-theme t
-          org-roam-ui-follow t
-          org-roam-ui-update-on-save t
-          org-roam-ui-open-on-start t))
-
-
 (use-package! org-modern)
 (use-package! undo-tree)
 
@@ -49,26 +29,25 @@
   (setq treemacs-show-hidden-files t))
 
 
-(nyan-mode)
+
 (setq nyan-animate-nyancat t)
 (setq nyan-wavy-trail t)
+(nyan-mode)
 
-(org-roam-db-autosync-mode)
 
 (global-org-modern-mode)
 
-(setq telega-server-libs-prefix "/usr")
 
 (setcdr (assq t org-file-apps-gnu) 'browse-url-xdg-open)
 
-(setq telega-open-file-function 'org-open-file)
 
 (global-display-fill-column-indicator-mode)
 (auto-fill-mode)
 
-(setq telega-sticker-size '(8 . 48))
-
-
-
 
 (org-babel-do-load-languages 'org-babel-load-languages '((python . t)))
+
+(require 'org-download) ;; TODO: later.
+(require 'openwith)
+;; org super agenda
+;; org timeblockx
